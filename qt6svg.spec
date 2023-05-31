@@ -5,7 +5,7 @@
 #
 Name     : qt6svg
 Version  : 6.5.0
-Release  : 33
+Release  : 34
 URL      : https://download.qt.io/official_releases/qt/6.5/6.5.0/submodules/qtsvg-everywhere-src-6.5.0.tar.xz
 Source0  : https://download.qt.io/official_releases/qt/6.5/6.5.0/submodules/qtsvg-everywhere-src-6.5.0.tar.xz
 Summary  : No detailed summary available
@@ -67,7 +67,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683737862
+export SOURCE_DATE_EPOCH=1685542057
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -94,7 +94,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1683737862
+export SOURCE_DATE_EPOCH=1685542057
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/qt6svg
 cp %{_builddir}/qtsvg-everywhere-src-%{version}/LICENSES/BSD-3-Clause.txt %{buildroot}/usr/share/package-licenses/qt6svg/b073f11f0c81a95ab5e32aa6b5d23a5955a95274 || :
@@ -124,8 +124,6 @@ popd
 
 %files dev
 %defattr(-,root,root,-)
-/V3/usr/lib64/libQt6Svg.so
-/V3/usr/lib64/libQt6SvgWidgets.so
 /usr/include/QtSvg/6.5.0/QtSvg/private/qsvgfont_p.h
 /usr/include/QtSvg/6.5.0/QtSvg/private/qsvggraphics_p.h
 /usr/include/QtSvg/6.5.0/QtSvg/private/qsvghandler_p.h
@@ -192,9 +190,7 @@ popd
 
 %files lib
 %defattr(-,root,root,-)
-/V3/usr/lib64/libQt6Svg.so.6
 /V3/usr/lib64/libQt6Svg.so.6.5.0
-/V3/usr/lib64/libQt6SvgWidgets.so.6
 /V3/usr/lib64/libQt6SvgWidgets.so.6.5.0
 /V3/usr/lib64/qt6/plugins/iconengines/libqsvgicon.so
 /V3/usr/lib64/qt6/plugins/imageformats/libqsvg.so
