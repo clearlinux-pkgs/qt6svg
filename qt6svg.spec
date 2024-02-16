@@ -7,7 +7,7 @@
 #
 Name     : qt6svg
 Version  : 6.6.2
-Release  : 42
+Release  : 43
 URL      : https://download.qt.io/official_releases/qt/6.6/6.6.2/submodules/qtsvg-everywhere-src-6.6.2.tar.xz
 Source0  : https://download.qt.io/official_releases/qt/6.6/6.6.2/submodules/qtsvg-everywhere-src-6.6.2.tar.xz
 Summary  : No detailed summary available
