@@ -7,7 +7,7 @@
 #
 Name     : qt6svg
 Version  : 6.8.0
-Release  : 53
+Release  : 54
 URL      : https://download.qt.io/official_releases/qt/6.8/6.8.0/submodules/qtsvg-everywhere-src-6.8.0.zip
 Source0  : https://download.qt.io/official_releases/qt/6.8/6.8.0/submodules/qtsvg-everywhere-src-6.8.0.zip
 Summary  : No detailed summary available
